@@ -65,6 +65,4 @@ Report bugs and ideas in [Issues](https://github.com/kakilangit/shokirei/issues)
 
 ## License
 
-Shokirei is free to use, but not open source: see [LICENSE](LICENSE). This repository holds only its
-releases. Versions up to 0.3.1 were released under the MIT License. The app includes open-source
-software under its own licenses, listed in `THIRD_PARTY_LICENSES.txt` inside the app.
+See [LICENSE](LICENSE).
