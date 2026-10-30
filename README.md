@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" alt="Shokirei icon" width="128">
+  <img src="assets/icons/shokirei-256.png" alt="Shokirei icon" width="128">
 </p>
 
 # Shokirei
