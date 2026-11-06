@@ -2,67 +2,107 @@
   <img src="assets/icons/shokirei-256.png" alt="Shokirei icon" width="128">
 </p>
 
-# Shokirei
+<h1 align="center">Shokirei</h1>
 
-[![Latest release](https://img.shields.io/github/v/release/kakilangit/shokirei)](https://github.com/kakilangit/shokirei/releases/latest)
+<p align="center">
+  <strong>Turn any screenshot into one worth sharing, in seconds.</strong><br>
+  Capture, frame, mark up, and share. It all happens on your Mac.
+</p>
 
-*Shot* + *kirei* (綺麗, Japanese for "beautiful"), said "sho-kee-ray".
-
-A native macOS app that makes screenshots beautiful, built with Rust and [GPUI](https://www.gpui.rs/). Capture an area, a window, or the whole screen, or bring in an image or a piece of code, and put it on a gradient backdrop with padding, rounded corners, and a shadow. Mark it up with arrows, boxes, text, and blur, copy the text in it, or hide what's sensitive in one click. Everything runs on your Mac: no account, no uploads, no tracking.
-
-> **Status:** early development.
+<p align="center">
+  <a href="https://github.com/kakilangit/shokirei/releases/latest"><img src="https://img.shields.io/github/v/release/kakilangit/shokirei?label=download" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/macOS-Apple%20silicon%20%26%20Intel-black" alt="macOS, Apple silicon and Intel">
+  <img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/kakilangit/static/refs/heads/main/shokirei/shokirei_screenshot.png" alt="Shokirei showing a screenshot on a gradient backdrop, marked with a box and an arrow: capture and code at the top, the annotation tools under the picture, and backdrop and style controls in the sidebar" width="800">
 </p>
 
-## Features
+<p align="center">
+  <em>Shot</em> + <em>kirei</em> (綺麗, Japanese for "beautiful"). Say it "sho-kee-ray".
+</p>
 
-- Capture an area, a window, or the whole screen Shokirei is on, with the system capture tool
-- Capture an area from any app with `⇧⌘2`, or another shortcut of your choice
-- An icon in the menu bar to capture or bring the window back; closing the window keeps Shokirei
-  running there
-- Open an image file (PNG, JPEG, or TIFF) or paste one from the clipboard
-- Everything in one window: where a picture comes from in the bar at the top, the tools for marking
-  it up floating under it, and how it looks in the sidebar
-- Backdrops: gradient presets and a plain color, your own colors and angle, a picture of your own,
-  or Auto, which picks a gradient from the screenshot's colors
-- Adjustable padding, corner radius, and shadow strength
-- Sizes for social sites: 1:1, 4:5, 16:9, 9:16, and 1.91:1
-- Balance: centers the content with even margins on every side
-- Saved styles: keep a look and apply it to later screenshots
-- Annotations: arrows, boxes, text, and blur, which hides passwords and names, in six colors
-- Blur sensitive text in one click: email addresses, card numbers, IP addresses, API keys
-- Copy text from a screenshot, all of it or a selected area, recognized on your Mac
-- Code snippets as pictures: click Code or paste code, and it's highlighted in an editor window, in
-  24 languages, dark or light, with or without line numbers
-- Watermark: your logo in a corner or the center, with adjustable opacity and size
-- Recent: reopen any of your last six screenshots; they stay on your Mac, and Clear removes them
-- Shokirei hides while you capture and comes back with the result
-- Copy the finished picture, or save it as PNG, JPEG, or TIFF, at full resolution
-- Smaller files: standard resolution and stronger compression, about a quarter of the size
-- Light and dark themes; override with `SHOKIREI_THEME=light|dark`
+---
+
+Raw screenshots look unfinished. Shokirei makes them look polished: press `⇧⌘2` in any app, drag
+over what you want, and your capture comes back on a gradient with soft padding, rounded corners,
+and a shadow. You can copy it straight into a post, a doc, or a chat.
+
+## Why Shokirei
+
+- **Fast.** One shortcut from any app, and the result is waiting for you. Shokirei gets out of the
+  way while you capture and comes back when you're done.
+- **Good-looking by default.** Auto picks a gradient from your screenshot's own colors, and Balance
+  evens out the margins, so the first result is usually ready to share.
+- **Private.** No account, no uploads, no tracking. Text recognition runs on your Mac too.
+- **Free.**
+
+## What it does
+
+### Capture from anywhere
+
+- Capture an area, a window, or the whole screen, or press `⇧⌘2` (or a shortcut you pick) from any app
+- Use the menu bar icon to capture, even with the window closed
+- Open, paste, or drop in a PNG, JPEG, or TIFF
+- Reopen any of your last six screenshots from Recent
+
+### Make it look good
+
+- Gradient presets, a plain color, your own two colors and angle, a picture of your own, or **Auto**,
+  which matches the screenshot
+- Adjust padding, corner radius, and shadow
+- Pick a shape for social posts: 1:1, 4:5, 16:9, 9:16, and 1.91:1
+- **Balance** centers the content with even margins
+- **Saved styles** keep your look for every screenshot after
+- **Watermark** puts your logo in a corner or the center
+
+### Mark it up
+
+- Add arrows, boxes, text, and blur, in six colors
+- **Blur sensitive text in one click:** email addresses, card numbers, IP addresses, and API keys
+- **Copy the text** in a screenshot, all of it or just the part you select
+
+### Show off your code
+
+Paste code or click **Code**. Shokirei highlights it in an editor window, in 24 languages, dark or
+light, with or without line numbers. It's ready to share like any screenshot.
+
+### Share it
+
+- Copy, save, or drag the picture straight into another app, as PNG, JPEG, or TIFF
+- Export at full resolution, or pick **Smaller files** for about a quarter of the size
+- Saved files get a date and time in the name, so they never overwrite each other
+- Light and dark themes follow your system
 
 ## Install
 
-macOS (Apple silicon and Intel), with [Homebrew](https://brew.sh):
+With [Homebrew](https://brew.sh):
 
 ```sh
 brew install --cask kakilangit/tap/shokirei
 ```
 
-Or download `Shokirei-<version>-universal.dmg` from [Releases](https://github.com/kakilangit/shokirei/releases/latest) and drag Shokirei to Applications. The app is not notarized yet, so macOS blocks it until you clear the quarantine flag (Homebrew does this for you):
+Or download `Shokirei-<version>-universal.dmg` from
+[Releases](https://github.com/kakilangit/shokirei/releases/latest) and drag Shokirei to
+Applications. Runs on Apple silicon and Intel Macs.
 
-```sh
-xattr -cr /Applications/Shokirei.app
-```
+> [!NOTE]
+> Shokirei isn't notarized yet, so macOS blocks it at first. Homebrew takes care of that for you.
+> If you installed from the `.dmg`, run:
+>
+> ```sh
+> xattr -cr /Applications/Shokirei.app
+> ```
 
-The first capture asks for the Screen Recording permission, in System Settings → Privacy & Security → Screen Recording.
+On your first capture, macOS asks for the Screen Recording permission (System Settings → Privacy &
+Security → Screen Recording). Updates keep it.
 
 ## Feedback
 
-Report bugs and ideas in [Issues](https://github.com/kakilangit/shokirei/issues).
+Shokirei is young and improving fast. Bug reports and ideas are welcome in
+[Issues](https://github.com/kakilangit/shokirei/issues).
 
 ## License
 
-See [LICENSE](LICENSE).
+Free to use. See [LICENSE](LICENSE).
