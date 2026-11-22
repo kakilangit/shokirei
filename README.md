@@ -27,14 +27,15 @@
 
 Raw screenshots look unfinished. Shokirei makes them look polished: press `⇧⌘2` in any app, drag
 over what you want, and your capture comes back on a gradient with soft padding, rounded corners,
-and a shadow. You can copy it straight into a post, a doc, or a chat.
+and a shadow. It looks like the screenshot was the plan all along. Copy it straight into a post, a
+doc, or a chat.
 
 ## Why Shokirei
 
 - **Fast.** One shortcut from any app, and the result is waiting for you. Shokirei gets out of the
   way while you capture and comes back when you're done.
 - **Good-looking by default.** Auto picks a gradient from your screenshot's own colors, and Balance
-  evens out the margins, so the first result is usually ready to share.
+  evens out the margins. Your desktop icons stay out of the final picture.
 - **Private.** No account, no uploads, no tracking. Text recognition runs on your Mac too.
 - **Free.**
 
